@@ -87,8 +87,8 @@ db.order_items.insertMany([
 ])
 
 //Getting records from a database
-db.product.find({prod_id:'6749df5912307752ea27f072'})
-db.user.find({user_id:1})
+db.product.find({_id:ObjectId('6749df5912307752ea27f072')})
+db.users.find({_id:ObjectId('6749de8c12307752ea27f06f')})
 
 //Updating a database
 db.product.updateOne(

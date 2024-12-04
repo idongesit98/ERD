@@ -91,6 +91,13 @@ UPDATE
 	size = "Medium"
  WHERE
 	prod_id = 1;
+
+UPDATE
+	Orders
+ SET
+	status = "approved"
+ WHERE
+	order_id = 1;    
     
 --Delete from the database
 DELETE FROM 
@@ -101,7 +108,12 @@ WHERE
 DELETE FROM 
     Categories
 WHERE 
-    cat_id = 3;      
+    cat_id = 3;  
+
+DELETE FROM 
+    Users
+WHERE 
+    user_id = 3;        
 
 --SELECT FROM Database using Join
 SELECT 
